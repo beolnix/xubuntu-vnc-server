@@ -7,7 +7,7 @@ Docker image with pre-configured vncserver and xfc4 session
 
 ## Run
 
-`docker run -t -p 5901:5901 -e USER=root xubuntu-vnc-server bash -c "vncserver :1 && xfce4-session --display :1"`
+`docker run -t -p 5901:5901 xubuntu-vnc-server`
 
 ## Use
 
