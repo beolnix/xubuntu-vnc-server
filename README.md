@@ -2,8 +2,10 @@
 Docker image with pre-configured vncserver and xfc4 session
 
 ## Build
-
-`docker build -t xubuntu-vnc-server`
+```
+$ git clone "git@github.com:beolnix/xubuntu-vnc-server.git"
+$ docker build -t xubuntu-vnc-server ./xubuntu-vnc-server/
+```
 
 ## Run
 
