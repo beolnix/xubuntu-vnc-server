@@ -12,7 +12,8 @@ RUN \
   apt-get install -y xubuntu-desktop libc6 tightvncserver
 
 # Clean-up to reduce image size
-RUN apt-get purge
+RUN DEBIAN_FRONTEND=noninteractive \
+  apt-get purge && apt-get autoremove -y && apt-get clean -y
 
 # configure VNC server with "retro24" as a password  
 COPY ./.vnc /root/.vnc

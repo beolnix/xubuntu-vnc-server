@@ -7,7 +7,7 @@ Docker image with pre-configured vncserver and xfc4 session
 
 ## Run
 
-`docker run -t -p 5901:5901 xubuntu-vnc-server`
+`docker run -d -t -p 5901:5901 xubuntu-vnc-server`
 
 ## Use
 
